@@ -20,7 +20,10 @@ typedef struct {
 	Value* stack;
 	int stackCount;
 	int stackCapacity;
+	Obj* objects;
 } VM;
+
+extern VM vm;
 
 void initVM();
 void freeVM();
